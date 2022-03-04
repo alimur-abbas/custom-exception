@@ -15,7 +15,7 @@ public class ExceptionManagementController {
     @PostMapping("/check")
     public ResponseEntity saveUser(@RequestBody Applicant app){
         if(app.getAge()<=18){
-            throw new AgeIsNotValidException();
+            throw new AgeIsNotValidException("100");
         }
        return (ResponseEntity) ResponseEntity.ok();
     }

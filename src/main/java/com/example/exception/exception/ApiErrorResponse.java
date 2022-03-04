@@ -3,15 +3,15 @@ package com.example.exception.exception;
 import java.time.Instant;
 
 public class ApiErrorResponse {
-    private  int status;
+    private  String status;
     private  String message;
     private Instant timestamp;
 
-    public int getStatus() {
+    public String getStatus() {
         return status;
     }
 
-    public void setStatus(int status) {
+    public void setStatus(String status) {
         this.status = status;
     }
 
