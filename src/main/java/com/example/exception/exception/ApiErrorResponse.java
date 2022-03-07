@@ -3,16 +3,17 @@ package com.example.exception.exception;
 import java.time.Instant;
 
 public class ApiErrorResponse {
-    private  String status;
-    private  String message;
+    private int errorCode;
+    private String message;
     private Instant timestamp;
 
-    public String getStatus() {
-        return status;
+
+    public int getErrorCode() {
+        return errorCode;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public void setErrorCode(int errorCode) {
+        this.errorCode = errorCode;
     }
 
     public String getMessage() {

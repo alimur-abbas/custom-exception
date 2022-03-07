@@ -11,6 +11,9 @@ public class Applicant {
         this.name = name;
     }
 
+    public Applicant() {
+    }
+
     public String getUuid() {
         return uuid;
     }
